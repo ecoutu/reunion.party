@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div class="container">
     <Flyer flyer="../assets/flyer1.jpeg" />
     <Guidelines />
     <InstagramIcon class="instagram-icon" user="reunition.party" />
@@ -29,7 +29,7 @@ body {
   margin: 0;
   background: black;
 }
-.app {
+.container {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
