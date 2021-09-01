@@ -1,0 +1,8 @@
+dist
+coverage
+public
+/docs/api/
+CHANGELOG.md
+tls
+.husky/_
+CHANGELOG.md
