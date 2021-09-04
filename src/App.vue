@@ -2,7 +2,8 @@
   <div class="container">
     <Flyer flyer="../assets/flyer1.jpeg" />
     <Guidelines />
-    <InstagramIcon class="instagram-icon" user="reunition.party" />
+    <InstagramIcon class="social-icon" user="reunition.party" />
+    <FacebookIcon class="social-icon" user="re.unitionparty" />
   </div>
 </template>
 
@@ -10,10 +11,12 @@
 import Flyer from './components/Flyer.vue';
 import Guidelines from './components/Guidelines.vue';
 import InstagramIcon from './components/InstagramIcon.vue';
+import FacebookIcon from '@/components/FacebookIcon';
 
 export default {
   name: 'App',
   components: {
+    FacebookIcon,
     Flyer,
     Guidelines,
     InstagramIcon,
@@ -39,9 +42,9 @@ body {
   height: 100%;
 }
 
-.instagram-icon {
+.social-icon {
   width: 48px;
   height: 48px;
-  stroke: white;
+  margin-right: 16px;
 }
 </style>

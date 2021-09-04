@@ -1,12 +1,12 @@
 <template>
-  <a href="https://instagram.com/re.unition" target="_blank">
-    <img alt="link to instagram" src="../assets/insta-white.png" />
+  <a href="https://www.facebook.com/re.unitionparty/" target="_blank">
+    <img alt="link to facebook" src="../assets/facebook.png" />
   </a>
 </template>
 
 <script>
 export default {
-  name: 'InstagramIcon',
+  name: 'FacebookIcon',
   props: {
     user: String,
   },
