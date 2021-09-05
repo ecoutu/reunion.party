@@ -1,9 +1,14 @@
 <template>
-  <div class="container">
+  <div class="container flex-column">
     <Flyer flyer="../assets/flyer1.jpeg" />
     <Guidelines />
-    <InstagramIcon class="social-icon" user="reunition.party" />
-    <FacebookIcon class="social-icon" user="re.unitionparty" />
+    <div class="flex-row">
+      <InstagramIcon class="social-icon" user="reunition.party" />
+      <FacebookIcon class="social-icon" user="re.unitionparty" />
+    </div>
+    <div class="flex-row">
+      <QrCode class="qrcode" />
+    </div>
   </div>
 </template>
 
@@ -12,6 +17,7 @@ import Flyer from './components/Flyer.vue';
 import Guidelines from './components/Guidelines.vue';
 import InstagramIcon from './components/InstagramIcon.vue';
 import FacebookIcon from '@/components/FacebookIcon';
+import QrCode from '@/components/QrCode';
 
 export default {
   name: 'App',
@@ -20,6 +26,7 @@ export default {
     Flyer,
     Guidelines,
     InstagramIcon,
+    QrCode,
   },
 };
 </script>
@@ -36,15 +43,24 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  width: 100%;
-  height: 100%;
 }
 
 .social-icon {
   width: 48px;
   height: 48px;
-  margin-right: 16px;
+  margin: 16px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 </style>
