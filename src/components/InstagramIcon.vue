@@ -1,5 +1,5 @@
 <template>
-  <a href="https://instagram.com/re.unition" target="_blank">
+  <a href="https://instagram.com/re.un1t1on" target="_blank">
     <img alt="link to instagram" src="../assets/insta-white.png" />
   </a>
 </template>
